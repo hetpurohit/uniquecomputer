@@ -1,0 +1,43 @@
+#computer{
+    padding: 20px 0px;
+    font-size: 50px;
+    text-align: center;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4,20%);
+    grid-auto-rows: minmax(200px,auto);
+    grid-gap: 1em;
+    justify-content: center;
+}
+.wrapper>div{
+    border: 3px solid yellow;
+    position: relative;
+}
+.wrapper> div img{
+    width: 100%;
+    overflow: hidden;
+}
+.box1{
+    grid-row: 1/3;
+    grid-column: 1/3;
+}
+.price{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:black ;
+    color: white;
+}
+.lbl1{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+.headingfont{
+    background-color: orange;
+}
+.wrapper> div img:hover{
+    transform: scale(0.9);
+    transition: 0.4s linear;
+}
